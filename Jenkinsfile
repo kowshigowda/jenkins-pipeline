@@ -1,10 +1,10 @@
 pipeline{
 agent any
 stages{
-stage ('build'){
+stage ('Build'){
 steps {
-ls -lrt
-cat /home/ubuntu/jenkins.sh
+sh 'ls -lrt'
+sh 'cat /home/ubuntu/jenkins.sh'
 }
 }
 }
